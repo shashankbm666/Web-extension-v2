@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎯 FocusHelper</h2>
+    
+    <!-- Font Selection -->
+    <div class="control-group">
+      <label>📝 Font</label>
+      <select id="fontSelect">
+        <option value="default">Default</option>
+        <option value="opendyslexic">OpenDyslexic</option>
+        <option value="dyslexie">Dyslexie</option>
+        <option value="arial">Arial</option>
+        <option value="verdana">Verdana</option>
+      </select>
+    </div>
+
+    <!-- Bold/Contrast Enhancement -->
+    <div class="control-group">
+      <label>🔥 Bold Style</label>
+      <select id="boldSelect">
+        <option value="none">None</option>
+        <option value="half">Half Bold</option>
+        <option value="full">Full Bold</option>
+        <option value="outline">Outline Text</option>
+      </select>
+    </div>
+
+    <!-- Magnifier Zoom Level -->
+    <div class="control-group">
+      <label>🔍 Magnifier Zoom</label>
+      <select id="magnifierZoom">
+        <option value="off">Off</option>
+        <option value="2">2x Zoom</option>
+        <option value="3">3x Zoom</option>
+        <option value="4">4x Zoom</option>
+        <option value="5">5x Zoom</option>
+      </select>
+    </div>
+
+    <!-- Background Color -->
+    <div class="control-group">
+      <label>🎨 Background</label>
+      <select id="bgSelect">
+        <option value="default">Default</option>
+        <option value="cream">Cream</option>
+        <option value="light-blue">Light Blue</option>
+        <option value="light-green">Light Green</option>
+        <option value="dark">Dark Mode</option>
+      </select>
+    </div>
+
+    <!-- Toggle Controls -->
+    <div class="toggle-group">
+      <div class="toggle-item">
+        <label>📏 Line Guide</label>
+        <input type="checkbox" id="lineGuide" class="toggle">
+      </div>
+
+      <div class="toggle-item">
+        <label>🔊 Text-to-Speech</label>
+        <input type="checkbox" id="textToSpeech" class="toggle">
+      </div>
+
+      <div class="toggle-item">
+        <label>🚫 Hide Distractions</label>
+        <input type="checkbox" id="hideDistraction" class="toggle">
+      </div>
+    </div>
+
+    <div class="footer">
+      <small>Select text for speech • Move mouse for magnifier</small>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

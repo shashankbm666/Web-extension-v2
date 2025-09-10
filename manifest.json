@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FocusHelper - ADHD & Dyslexia Aid",
+  "version": "1.0",
+  "description": "Minimalist accessibility extension for ADHD and dyslexic users",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png", 
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}

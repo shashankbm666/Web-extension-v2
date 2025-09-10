@@ -1,0 +1,16 @@
+/* Base accessibility improvements */
+.focus-helper-enhanced {
+  line-height: 1.6 !important;
+  word-spacing: 0.1em !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Smooth transitions for all changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, font-family 0.3s ease;
+}
+
+/* Ensure text remains selectable */
+.focus-helper-bold * {
+  user-select: text !important;
+}
